@@ -3,11 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Golu Sen — Frontend Developer</title>
+<title>Golu Sen — React Developer</title>
+<meta name="description" content="Golu Sen, React developer from Vidisha, Madhya Pradesh. Built production features at Linkific and a full-stack MERN app with JWT authentication.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/animations.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -25,16 +28,16 @@
 
 <header class="hero wrap">
   <div class="prompt">whoami</div>
-  <h1>Golu Sen — Frontend Developer, building React interfaces that ship.<span class="cursor">&nbsp;</span></h1>
-  <p class="lead">Computer Engineering student at Truba Group of Institutes, Bhopal. Recently shipped production
-  features at Linkific — a resume builder, AI content tools, and auth fixes real users depend on.</p>
+  <h1>Golu Sen — React Developer, building interfaces that ship.<span class="cursor">&nbsp;</span></h1>
+  <p class="lead">B.Tech Computer Engineering student (2027 batch) at Truba Group of Institutes, Bhopal. I interned at Linkific, where I built a resume builder with PDF export, the frontend of an AI-powered content calendar, and fixed a production login failure.</p>
   <div class="hero-actions">
     <a class="btn btn-primary" href="#projects">View projects</a>
     <a class="btn btn-ghost" href="#contact">Get in touch</a>
   </div>
   <div class="hero-meta">
     <div class="row"><span class="k">based in</span><span>Vidisha, Madhya Pradesh</span></div>
-    <div class="row"><span class="k">stack</span><span>React.js · JavaScript · REST APIs · TypeScript (basic)</span></div>
+    <div class="row"><span class="k">stack</span><span>React.js · Node.js · Express · MongoDB · REST APIs</span></div>
+    <div class="row"><span class="k">looking for</span><span>Onsite internships · open to relocation</span></div>
     <div class="row"><span class="k">github</span><span>github.com/GoluSen</span></div>
   </div>
 </header>
@@ -50,11 +53,11 @@
         <h3>Linkific</h3>
         <div class="role">React Developer Intern · Remote</div>
         <ul>
-          <li>Built a resume-building module in React with dynamic form editing, live preview, and ATS-optimized PDF export — shipped to production.</li>
-          <li>Refined AI resume-parsing prompt logic and added validation safeguards, reducing data misclassification.</li>
-          <li>Diagnosed and fixed a production auth bug caused by a cross-domain cookie and CORS misconfiguration, restoring login.</li>
-          <li>Built the frontend for a LinkedIn content calendar, including file upload, AI content generation flow, and post regeneration.</li>
-          <li>Integrated REST APIs with the backend team and resolved merge conflicts across parallel feature branches.</li>
+          <li>Built a resume builder in React.js with editable form sections, live preview and ATS-friendly PDF export. It shipped to production.</li>
+          <li>Built the frontend of an AI-powered LinkedIn content calendar, covering file upload, content generation and post regeneration.</li>
+          <li>Found and fixed a production login failure caused by cross-domain cookie and CORS misconfiguration.</li>
+          <li>Improved AI resume parsing by refining prompt logic and adding validation checks to reduce misclassified data.</li>
+          <li>Integrated REST APIs with backend developers and resolved merge conflicts across parallel feature branches using Git and GitHub.</li>
         </ul>
       </div>
     </div>
@@ -69,27 +72,28 @@
   <div class="wrap">
     <div class="projects-grid">
       <div class="card">
+        <h3>Task Manager (MERN)</h3>
+        <p>Full-stack task manager with JWT login, protected routes and per-user task CRUD. The REST API is built in Node.js, Express and MongoDB. Frontend is on Vercel, API on Render. Demo login is in the README. First load can take up to a minute.</p>
+        <div class="stack">React.js · Vite · React Router · Axios · Node.js · Express · MongoDB · JWT</div>
+        <a class="link" href="https://task-manager-frontend-hazel-iota.vercel.app/" target="_blank" rel="noopener">Live Demo</a>
+        <a class="link" href="https://github.com/GoluSen/task-manager-frontend" target="_blank" rel="noopener">Frontend Code</a>
+        <a class="link" href="https://github.com/GoluSen/task-manager-api" target="_blank" rel="noopener">Backend Code</a>
+      </div>
+      <div class="card">
         <h3>Finance Tracker</h3>
-        <p>Personal finance app that tracks income, expenses, and budgets in real time, with chart-based spending breakdowns and monthly trends.</p>
-        <div class="stack">React.js · component-based charts · LocalStorage + JSON state</div>
+        <p>Tracks income, expenses and budgets, with charts for spending breakdown and monthly trends. Data is saved between sessions in LocalStorage.</p>
+        <div class="stack">React.js · JavaScript · CSS · LocalStorage</div>
         <a class="link" href="https://github.com/GoluSen/FINANCE-TRACKER" target="_blank" rel="noopener">View on GitHub</a>
       </div>
       <div class="card">
         <h3>QuizCrack</h3>
-        <p>Interactive quiz app with category selection, difficulty levels, and real-time score tracking against a live question bank.</p>
-        <div class="stack">React.js · third-party REST API · timed gameplay logic</div>
-        <a class="link" href="https://github.com/GoluSen/quizcrack" target="_blank" rel="noopener">View on GitHub</a>
-      </div>
-       <div class="card">
-        <h3>Task Manager (Full Stack)</h3>
-        <p>Full-stack task management app with JWT-based authentication, protected routes, and per-user task CRUD, deployed with a self-built REST API on the backend.</p>
-        <div class="stack">React.js · Node.js · Express · MongoDB · JWT</div>
-        <a class="link" href="https://task-manager-frontend-hazel-iota.vercel.app" target="_blank" rel="noopener">Live Demo</a>
-        <a class="link" href="https://github.com/GoluSen/task-manager-frontend" target="_blank" rel="noopener">View on GitHub</a>
+        <p>Quiz app with category and difficulty selection, live scoring and a results screen. Questions come from a third-party REST API.</p>
+        <div class="stack">React.js · JavaScript · REST API · CSS</div>
+        <a class="link" href="https://senquizcrack.netlify.app/" target="_blank" rel="noopener">Live Demo</a>
       </div>
       <div class="card">
         <h3>Open to build</h3>
-        <p>Currently looking for the next problem worth solving — full-stack, AI tooling, or dashboard work all welcome.</p>
+        <p>Looking for an onsite internship where I can work on real product features. Full-stack and frontend work are both welcome.</p>
         <div class="stack">let's talk</div>
         <a class="link" href="#contact">Say hello</a>
       </div>
@@ -102,12 +106,10 @@
     <div class="prompt">cat skills.json</div>
     <h2 class="sec-title">Skills</h2>
     <dl class="skills-list">
-      
-      <dt>Frameworks and Libraries</dt><dd>React.js, Node.js, Express.js</dd>
-      <dt>Web</dt><dd>HTML, CSS, JavaScript, React.js, Node.js</dd>
-       <dt>Database</dt><dd>MongoDB, Mongoose</dd>
-      <dt>Misc</dt><dd>REST APIs, TypeScript (basic)</dd>
-      <dt>Tools</dt><dd>Git, GitHub, VS Code, Postman, Render, Vercel</dd>
+      <dt>Languages</dt><dd>JavaScript (ES6+), TypeScript (basic), HTML5, CSS3</dd>
+      <dt>Frontend</dt><dd>React.js, React Router, Vite, Axios, Responsive Design</dd>
+      <dt>Backend and Database</dt><dd>Node.js, Express.js, MongoDB, Mongoose, REST APIs, JWT Authentication, CORS</dd>
+      <dt>Tools</dt><dd>Git, GitHub, Postman, VS Code, Render, Vercel</dd>
       <dt>OS</dt><dd>Windows, Linux</dd>
     </dl>
   </div>
@@ -146,19 +148,20 @@
   <div class="wrap">
     <div class="prompt">./contact --reach</div>
     <h2 class="sec-title">Let's work together</h2>
-    <p class="lead">Open to frontend and full-stack roles, internships, and freelance React work. Fastest way to reach me is email or phone.</p>
+    <p class="lead">Looking for onsite frontend or full-stack internships, and open to relocation. Fastest way to reach me is email or phone.</p>
     <div class="contact-links">
       <a class="btn btn-primary" href="mailto:golusen5196@gmail.com">golusen5196@gmail.com</a>
       <a class="btn btn-ghost" href="tel:+919244240409">+91 92442 40409</a>
       <a class="btn btn-ghost" href="https://github.com/GoluSen" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/golu-sen-64291a367">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/golu-sen-64291a367" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <div class="foot-note">
       <span>Golu Sen — Vidisha, Madhya Pradesh</span>
-      <span>Built with React fundamentals in mind, shipped as a single page</span>
+      <span>Built with HTML, CSS and JavaScript</span>
     </div>
   </div>
 </footer>
 
+<script src="assets/animations.js" defer></script>
 </body>
 </html>
